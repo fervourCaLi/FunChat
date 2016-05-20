@@ -2,7 +2,7 @@
 //  XMPPManager.h
 //  QingQuChat
 //
-//  Created by 我的宝宝 on 16/5/20.
+//  Created by fervour on 16/5/20.
 //  Copyright © 2016年 com.fervour. All rights reserved.
 //
 
@@ -11,8 +11,8 @@
 
 #define kUserName @"UserName"
 #define kPassWord @"PassWord"
-#define kHostName @"bogon"
-#define kHostPort 5280
+#define kHostName @"127.0.0.1"
+#define kHostPort 5222
 
 @interface XMPPManager : NSObject
 

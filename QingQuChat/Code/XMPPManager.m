@@ -2,7 +2,7 @@
 //  XMPPManager.m
 //  QingQuChat
 //
-//  Created by 我的宝宝 on 16/5/20.
+//  Created by fervour on 16/5/20.
 //  Copyright © 2016年 com.fervour. All rights reserved.
 //
 
@@ -46,6 +46,7 @@ static XMPPManager *_share = nil;
 }
 
 - (void)login {
+    _isRegister = NO;
     [self connect];
 }
 
@@ -104,30 +105,32 @@ static XMPPManager *_share = nil;
     NSError *error = nil;
     if (_isRegister) {
         if (![_xmppStream registerWithPassword:_passWord error:&error]) {
-            NSLog(@"注册失败");
+            NSLog(@"注册失败 error:%@",error);
         }
     } else {
         if (![_xmppStream authenticateWithPassword:_passWord error:&error]) {
-            NSLog(@"登录失败");
-            
+            NSLog(@"登录失败 error:%@",error);
         }
     }
 }
 
 - (void)xmppStreamDidAuthenticate:(XMPPStream *)sender {
     NSLog(@"登录成功");
+    [[NSNotificationCenter defaultCenter] postNotificationName:@"LoginSuccess" object:nil];
 }
 
 - (void)xmppStream:(XMPPStream *)sender didNotAuthenticate:(DDXMLElement *)error {
-    NSLog(@"登录失败");
+    NSLog(@"登录失败 error:%@",error);
 }
 
 - (void)xmppStreamDidRegister:(XMPPStream *)sender {
     NSLog(@"注册成功");
+    [[NSNotificationCenter defaultCenter] postNotificationName:@"RegisterSuccess" object:nil];
+    
 }
 
 - (void)xmppStream:(XMPPStream *)sender didNotRegister:(DDXMLElement *)error {
-    NSLog(@"注册失败");
+    NSLog(@"注册失败 error:%@",error);
 }
 
 

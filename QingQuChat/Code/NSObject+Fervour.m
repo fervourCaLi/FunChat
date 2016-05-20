@@ -2,7 +2,7 @@
 //  NSObject+Fervour.m
 //  QingQuChat
 //
-//  Created by 我的宝宝 on 16/5/20.
+//  Created by fervour on 16/5/20.
 //  Copyright © 2016年 com.fervour. All rights reserved.
 //
 

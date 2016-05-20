@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		05BAD2A86B51DD69A4916884 /* libPods-QingQuChat.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 24DAF8C3D999F4649A0FAAF6 /* libPods-QingQuChat.a */; };
 		2B0393801CEEA0F8006FB3CB /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B03937D1CEEA0F8006FB3CB /* AppDelegate.m */; };
 		2B0393811CEEA0F8006FB3CB /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B03937F1CEEA0F8006FB3CB /* LoginViewController.m */; };
 		2B0393851CEEA134006FB3CB /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2B0393821CEEA134006FB3CB /* Info.plist */; };
@@ -15,9 +14,11 @@
 		2B03938A1CEEA17B006FB3CB /* QingQuChat.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 2B0393881CEEA17B006FB3CB /* QingQuChat.xcdatamodeld */; };
 		2B03938E1CEEA526006FB3CB /* XMPPManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B03938D1CEEA526006FB3CB /* XMPPManager.m */; };
 		2BC63ABD1CEEE05400216D79 /* NSObject+Fervour.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BC63ABC1CEEE05400216D79 /* NSObject+Fervour.m */; };
-		C7F97F9F1CE89576001D345E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C7F97F9D1CE89576001D345E /* Main.storyboard */; };
+		C7C731AC1CEFCAAF00A18C65 /* RegisterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C7C731AB1CEFCAAF00A18C65 /* RegisterViewController.m */; };
+		C7C731B11CEFCDE400A18C65 /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C7C731B01CEFCDE400A18C65 /* HomeViewController.m */; };
+		C7C731B81CEFD80200A18C65 /* libPods-QingQuChat.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C7C731B71CEFD80200A18C65 /* libPods-QingQuChat.a */; settings = {ATTRIBUTES = (Weak, ); }; };
+		C7C731B91CEFD84200A18C65 /* GLKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C7C731B41CEFD10F00A18C65 /* GLKit.framework */; };
 		C7F97FA11CE89576001D345E /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C7F97FA01CE89576001D345E /* Images.xcassets */; };
-		C7F97FA41CE89576001D345E /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = C7F97FA21CE89576001D345E /* LaunchScreen.xib */; };
 		C7F97FB01CE89576001D345E /* QingQuChatTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C7F97FAF1CE89576001D345E /* QingQuChatTests.m */; };
 /* End PBXBuildFile section */
 
@@ -47,6 +48,12 @@
 		2B03938D1CEEA526006FB3CB /* XMPPManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XMPPManager.m; sourceTree = "<group>"; };
 		2BC63ABB1CEEE05400216D79 /* NSObject+Fervour.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+Fervour.h"; sourceTree = "<group>"; };
 		2BC63ABC1CEEE05400216D79 /* NSObject+Fervour.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+Fervour.m"; sourceTree = "<group>"; };
+		C7C731AA1CEFCAAF00A18C65 /* RegisterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RegisterViewController.h; sourceTree = "<group>"; };
+		C7C731AB1CEFCAAF00A18C65 /* RegisterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RegisterViewController.m; sourceTree = "<group>"; };
+		C7C731AF1CEFCDE400A18C65 /* HomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeViewController.h; sourceTree = "<group>"; };
+		C7C731B01CEFCDE400A18C65 /* HomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeViewController.m; sourceTree = "<group>"; };
+		C7C731B41CEFD10F00A18C65 /* GLKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GLKit.framework; path = System/Library/Frameworks/GLKit.framework; sourceTree = SDKROOT; };
+		C7C731B71CEFD80200A18C65 /* libPods-QingQuChat.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libPods-QingQuChat.a"; path = "Pods/../build/Debug-iphoneos/libPods-QingQuChat.a"; sourceTree = "<group>"; };
 		C7F97F8D1CE89576001D345E /* QingQuChat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = QingQuChat.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C7F97F9E1CE89576001D345E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		C7F97FA01CE89576001D345E /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
@@ -61,7 +68,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				05BAD2A86B51DD69A4916884 /* libPods-QingQuChat.a in Frameworks */,
+				C7C731B91CEFD84200A18C65 /* GLKit.framework in Frameworks */,
+				C7C731B81CEFD80200A18C65 /* libPods-QingQuChat.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -80,6 +88,8 @@
 			children = (
 				2B03937E1CEEA0F8006FB3CB /* LoginViewController.h */,
 				2B03937F1CEEA0F8006FB3CB /* LoginViewController.m */,
+				C7C731AA1CEFCAAF00A18C65 /* RegisterViewController.h */,
+				C7C731AB1CEFCAAF00A18C65 /* RegisterViewController.m */,
 			);
 			name = Login;
 			path = ..;
@@ -88,10 +98,9 @@
 		2B03937B1CEEA0F8006FB3CB /* Code */ = {
 			isa = PBXGroup;
 			children = (
-				2BC63ABA1CEEDDFA00216D79 /* Other */,
-				2B03938B1CEEA4FB006FB3CB /* XMPP */,
-				2B03937C1CEEA0F8006FB3CB /* AppDelegate.h */,
-				2B03937D1CEEA0F8006FB3CB /* AppDelegate.m */,
+				C7C731AE1CEFCDCC00A18C65 /* Home */,
+				C7C731AD1CEFCD4200A18C65 /* APP */,
+				2BC63ABA1CEEDDFA00216D79 /* Category */,
 				2B03937A1CEE9FEC006FB3CB /* Login */,
 			);
 			path = Code;
@@ -106,13 +115,13 @@
 			name = XMPP;
 			sourceTree = "<group>";
 		};
-		2BC63ABA1CEEDDFA00216D79 /* Other */ = {
+		2BC63ABA1CEEDDFA00216D79 /* Category */ = {
 			isa = PBXGroup;
 			children = (
 				2BC63ABB1CEEE05400216D79 /* NSObject+Fervour.h */,
 				2BC63ABC1CEEE05400216D79 /* NSObject+Fervour.m */,
 			);
-			name = Other;
+			name = Category;
 			sourceTree = "<group>";
 		};
 		446EDFCD4A399C5FA73BD431 /* Pods */ = {
@@ -127,9 +136,30 @@
 		6E7B528580E62E9624F7D6F5 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				C7C731B71CEFD80200A18C65 /* libPods-QingQuChat.a */,
+				C7C731B41CEFD10F00A18C65 /* GLKit.framework */,
 				24DAF8C3D999F4649A0FAAF6 /* libPods-QingQuChat.a */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C7C731AD1CEFCD4200A18C65 /* APP */ = {
+			isa = PBXGroup;
+			children = (
+				2B03938B1CEEA4FB006FB3CB /* XMPP */,
+				2B03937C1CEEA0F8006FB3CB /* AppDelegate.h */,
+				2B03937D1CEEA0F8006FB3CB /* AppDelegate.m */,
+			);
+			name = APP;
+			sourceTree = "<group>";
+		};
+		C7C731AE1CEFCDCC00A18C65 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				C7C731AF1CEFCDE400A18C65 /* HomeViewController.h */,
+				C7C731B01CEFCDE400A18C65 /* HomeViewController.m */,
+			);
+			name = Home;
 			sourceTree = "<group>";
 		};
 		C7F97F841CE89576001D345E = {
@@ -156,8 +186,6 @@
 			isa = PBXGroup;
 			children = (
 				2B03937B1CEEA0F8006FB3CB /* Code */,
-				C7F97F9D1CE89576001D345E /* Main.storyboard */,
-				C7F97FA21CE89576001D345E /* LaunchScreen.xib */,
 				C7F97F901CE89576001D345E /* Supporting Files */,
 			);
 			path = QingQuChat;
@@ -166,6 +194,8 @@
 		C7F97F901CE89576001D345E /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				C7F97F9D1CE89576001D345E /* Main.storyboard */,
+				C7F97FA21CE89576001D345E /* LaunchScreen.xib */,
 				C7F97FA01CE89576001D345E /* Images.xcassets */,
 				2B0393881CEEA17B006FB3CB /* QingQuChat.xcdatamodeld */,
 				2B0393821CEEA134006FB3CB /* Info.plist */,
@@ -276,8 +306,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				2B0393851CEEA134006FB3CB /* Info.plist in Resources */,
-				C7F97F9F1CE89576001D345E /* Main.storyboard in Resources */,
-				C7F97FA41CE89576001D345E /* LaunchScreen.xib in Resources */,
 				C7F97FA11CE89576001D345E /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -348,8 +376,10 @@
 				2B03938E1CEEA526006FB3CB /* XMPPManager.m in Sources */,
 				2B0393811CEEA0F8006FB3CB /* LoginViewController.m in Sources */,
 				2B03938A1CEEA17B006FB3CB /* QingQuChat.xcdatamodeld in Sources */,
+				C7C731AC1CEFCAAF00A18C65 /* RegisterViewController.m in Sources */,
 				2B0393801CEEA0F8006FB3CB /* AppDelegate.m in Sources */,
 				2BC63ABD1CEEE05400216D79 /* NSObject+Fervour.m in Sources */,
+				C7C731B11CEFCDE400A18C65 /* HomeViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -472,9 +502,14 @@
 			baseConfigurationReference = 2810D2238AD23F7046BCC443 /* Pods-QingQuChat.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				GCC_PREFIX_HEADER = "$(SRCROOT)/QingQuChat/SupportingFiles/QingQuChat.pch";
 				INFOPLIST_FILE = "$(SRCROOT)/QingQuChat/SupportingFiles/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/build/Debug-iphoneos",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -484,9 +519,14 @@
 			baseConfigurationReference = 007A4459A6701B28387251C8 /* Pods-QingQuChat.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				GCC_PREFIX_HEADER = "$(SRCROOT)/QingQuChat/SupportingFiles/QingQuChat.pch";
 				INFOPLIST_FILE = "$(SRCROOT)/QingQuChat/SupportingFiles/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/build/Debug-iphoneos",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;

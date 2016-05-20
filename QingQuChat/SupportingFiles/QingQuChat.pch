@@ -22,6 +22,7 @@
 
     #import "XMPPManager.h"
     #import "NSObject+Fervour.h"
+    #import "AppDelegate.h"
 #endif
 
 #endif

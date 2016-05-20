@@ -21,6 +21,11 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     _xmppManager = [XMPPManager share];
+    
+    
+    NSNotificationCenter *notificationCenter = [NSNotificationCenter defaultCenter];
+    [notificationCenter addObserver:self selector:@selector(loginSuccess) name:@"LoginSuccess" object:nil];
+
 }
 
 - (void)setUsernameAndPassWord {
@@ -30,8 +35,10 @@
         [self setObject:[NSString stringWithFormat:@"%@@%@",_userNameTextField.text,kHostName] forKey:kUserName];
     }
     
-    
     [self setObject:_passWordTextField.text forKey:kPassWord];
+}
+- (IBAction)dfg:(id)sender {
+    [self dismissViewControllerAnimated:YES completion:nil];
 }
 
 - (IBAction)login:(id)sender {
@@ -40,8 +47,12 @@
     [_xmppManager login];
 }
 
+- (void)loginSuccess {
+    [self performSegueWithIdentifier:@"HomeSegue" sender:nil];
+}
+
 - (IBAction)registerAcount:(id)sender {
     [self setUsernameAndPassWord];
-    
 }
+
 @end
