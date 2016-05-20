@@ -1,0 +1,28 @@
+//
+//  QingQuChat.pch
+//  QingQuChat
+//
+//  Created by fervour on 16/5/15.
+//  Copyright (c) 2016年 com.fervour. All rights reserved.
+//
+
+#ifndef QingQuChat_QingQuChat_pch
+#define QingQuChat_QingQuChat_pch
+
+#ifdef __OBJC__
+    #import <AFNetworking.h>
+    #import <Availability.h>
+    #import <UIKit/UIKit.h>
+    #import <Foundation/Foundation.h>
+    #import <CoreData/CoreData.h>
+    #import <DDLog.h>
+    #import <DDTTYLogger.h>
+    #import <DDASLLogger.h>
+    #import <DDFileLogger.h>
+
+    #import "XMPPManager.h"
+    #import "NSObject+Fervour.h"
+#endif
+
+#endif
+
